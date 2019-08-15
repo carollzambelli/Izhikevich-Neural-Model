@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Carol/Desktop/TCC/01 - codigos Verilog/10 - modulo_IZ_v3/simulation/qsim
+vmodulo_IZ_v3
+!s110 1534201769
+!i10b 1
+!s100 j@5KHo_LEU@Ie8X6L8=e>2
+I6HFlh4ORQAFIPZ?f3:>HK0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1534201766
+8modulo_IZ_v3.vo
+Fmodulo_IZ_v3.vo
+L0 32
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1534201767.000000
+!s107 modulo_IZ_v3.vo|
+!s90 -work|work|modulo_IZ_v3.vo|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+nmodulo_@i@z_v3
+vmodulo_IZ_v3_vlg_vec_tst
+!s110 1534201770
+!i10b 1
+!s100 UGANlBChUzi@CfYjBfLHY2
+In`=c[@FoDI;J9Sh3z1AAP2
+R1
+R0
+w1534201762
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R2
+r1
+!s85 0
+31
+!s108 1534201770.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+R4
+nmodulo_@i@z_v3_vlg_vec_tst

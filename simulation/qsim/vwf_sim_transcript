@@ -1,0 +1,326 @@
+Determining the location of the ModelSim executable...
+
+Using: c:/intelfpga/17.0/modelsim_ase/win32aloem/
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off modulo_IZ_v3 -c modulo_IZ_v3 --vector_source="C:/Users/Carol/Desktop/TCC/01 - codigos Verilog/10 - modulo_IZ_v3/Waveform.vwf" --testbench_file="C:/Users/Carol/Desktop/TCC/01 - codigos Verilog/10 - modulo_IZ_v3/simulation/qsim/Waveform.vwf.vt"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Intel and sold by Intel or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Mon Aug 13 20:09:20 2018
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off modulo_IZ_v3 -c modulo_IZ_v3 --vector_source="C:/Users/Carol/Desktop/TCC/01 - codigos Verilog/10 - modulo_IZ_v3/Waveform.vwf" --testbench_file="C:/Users/Carol/Desktop/TCC/01 - codigos Verilog/10 - modulo_IZ_v3/simulation/qsim/Waveform.vwf.vt"
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+ test bench files
+
+Completed successfully. 
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Carol/Desktop/TCC/01 - codigos Verilog/10 - modulo_IZ_v3/simulation/qsim/" modulo_IZ_v3 -c modulo_IZ_v3
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Intel and sold by Intel or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Mon Aug 13 20:09:23 2018
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Carol/Desktop/TCC/01 - codigos Verilog/10 - modulo_IZ_v3/simulation/qsim/" modulo_IZ_v3 -c modulo_IZ_v3
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file modulo_IZ_v3.vo in folder "C:/Users/Carol/Desktop/TCC/01 - codigos Verilog/10 - modulo_IZ_v3/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4790 megabytes
+    Info: Processing ended: Mon Aug 13 20:09:26 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/Users/Carol/Desktop/TCC/01 - codigos Verilog/10 - modulo_IZ_v3/simulation/qsim/modulo_IZ_v3.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+c:/intelfpga/17.0/modelsim_ase/win32aloem//vsim -c -do modulo_IZ_v3.do
+
+Reading C:/intelFPGA/17.0/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+
+# do modulo_IZ_v3.do
+# ** Warning: (vlib-34) Library already exists at "work".
+
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:09:27 on Aug 13,2018
+# vlog -work work modulo_IZ_v3.vo 
+# -- Compiling module modulo_IZ_v3
+
+# 
+# Top level modules:
+# 	modulo_IZ_v3
+# End time: 20:09:29 on Aug 13,2018, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:09:30 on Aug 13,2018
+# vlog -work work Waveform.vwf.vt 
+
+# -- Compiling module modulo_IZ_v3_vlg_vec_tst
+# 
+# Top level modules:
+# 	modulo_IZ_v3_vlg_vec_tst
+# End time: 20:09:30 on Aug 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.modulo_IZ_v3_vlg_vec_tst 
+# Start time: 20:09:30 on Aug 13,2018
+# Loading work.modulo_IZ_v3_vlg_vec_tst
+# Loading work.modulo_IZ_v3
+# Loading altera_ver.dffeas
+# Loading sv_std.std
+# Loading altera_lnsim_ver.generic_m10k
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.common_28nm_ram_block
+# Loading altera_lnsim_ver.common_28nm_ram_register
+# Loading altera_lnsim_ver.common_28nm_ram_pulse_generator
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(33584): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(33584): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(33584): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(33584): [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(33584): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(33584): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(33584): [PCDPC] - Port size (24) does not match connection size (27) for port 'scanin'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(33584): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) (): [PCDPC] - Port size () does not match connection size () for .
+#    Time: 0 ps  Iteration: 0  Protected: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac // File: nofile
+# ** Warning: (vsim-3015) (): [PCDPC] - Port size () does not match connection size () for .
+#    Time: 0 ps  Iteration: 0  Protected: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac // File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(42116): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(42116): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(42116): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(42116): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(42116): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(42116): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(42116): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(42116): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(42116): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(42116): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(42116): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(42116): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(42116): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(42116): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(42116): [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(42116): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(42116): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(42116): [PCDPC] - Port size (24) does not match connection size (27) for port 'scanin'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(42116): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) (): [PCDPC] - Port size () does not match connection size () for .
+#    Time: 0 ps  Iteration: 0  Protected: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac // File: nofile
+# ** Warning: (vsim-3015) (): [PCDPC] - Port size () does not match connection size () for .
+#    Time: 0 ps  Iteration: 0  Protected: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_VV004|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac // File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(81371): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_V5|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(81371): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_V5|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(81371): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_V5|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(81371): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_V5|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(81371): [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_V5|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(81371): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_V5|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(81371): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_V5|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(81371): [PCDPC] - Port size (24) does not match connection size (27) for port 'scanin'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_V5|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(81371): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_V5|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) (): [PCDPC] - Port size () does not match connection size () for .
+#    Time: 0 ps  Iteration: 0  Protected: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_V5|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac // File: nofile
+# ** Warning: (vsim-3015) (): [PCDPC] - Port size () does not match connection size () for .
+#    Time: 0 ps  Iteration: 0  Protected: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_V5|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac // File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(171401): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(171401): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(171401): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(171401): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(171401): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(171401): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(171401): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(171401): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(171401): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(171401): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(171401): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(171401): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(171401): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(171401): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(171401): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(171401): [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(171401): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(171401): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(171401): [PCDPC] - Port size (24) does not match connection size (27) for port 'scanin'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(171401): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) (): [PCDPC] - Port size () does not match connection size () for .
+#    Time: 0 ps  Iteration: 0  Protected: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac // File: nofile
+# ** Warning: (vsim-3015) (): [PCDPC] - Port size () does not match connection size () for .
+#    Time: 0 ps  Iteration: 0  Protected: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_bV|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac // File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(205001): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(205001): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(205001): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(205001): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(205001): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(205001): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(205001): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(205001): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(205001): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(205001): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(205001): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(205001): Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3016) modulo_IZ_v3.vo(205001): Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(205001): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(205001): [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(205001): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(205001): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(205001): [PCDPC] - Port size (24) does not match connection size (27) for port 'scanin'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) modulo_IZ_v3.vo(205001): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac  File: nofile
+# ** Warning: (vsim-3015) (): [PCDPC] - Port size () does not match connection size () for .
+#    Time: 0 ps  Iteration: 0  Protected: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac // File: nofile
+# ** Warning: (vsim-3015) (): [PCDPC] - Port size () does not match connection size () for .
+#    Time: 0 ps  Iteration: 0  Protected: /modulo_IZ_v3_vlg_vec_tst/i1/\mult_a_bV_U|mult_altfp_mult_r8o_component|man_product2_mult|auto_generated|Mult0~mac // File: nofile
+# ** Warning: Design size of 48839 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+
+# after#29
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# ** Note: $finish    : Waveform.vwf.vt(59)
+#    Time: 1 us  Iteration: 0  Instance: /modulo_IZ_v3_vlg_vec_tst
+# End time: 20:09:39 on Aug 13,2018, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 86
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/Users/Carol/Desktop/TCC/01 - codigos Verilog/10 - modulo_IZ_v3/Waveform.vwf...
+
+Reading C:/Users/Carol/Desktop/TCC/01 - codigos Verilog/10 - modulo_IZ_v3/simulation/qsim/modulo_IZ_v3.msim.vcd...
+
+Processing channel transitions... 
+
+Writing the resulting VWF to C:/Users/Carol/Desktop/TCC/01 - codigos Verilog/10 - modulo_IZ_v3/simulation/qsim/modulo_IZ_v3_20180813200939.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.
