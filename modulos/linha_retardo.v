@@ -1,6 +1,6 @@
 /* ---------------------------------------------------------------------------------
 modulo linha de retardo - feito à mão - synthesizable (garantido)
-Autor:  João Ranhel
+Autor: Carolina Zambelli e João Ranhel
 Versão: 1.0       Data 01/01/2017
 Funcionamento:
 recebe um vetor A de W bits, e causa um delay de L clk (se enable=1)
