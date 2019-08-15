@@ -5,10 +5,13 @@ The importantance because hFP requires half of the memory space, lower bandwidth
 The floating points conversion circuits (32 bits to 16 bits and vice-versa), may be implemented using few
 logical blocks in field-programmable gate arrays (FPGA) with no relevant latency. We conclude that, for implementing floating point computed SNN in FPGAs, storing data on hFP format is suitable and effective, even though it requires conversion circuits.
 
+&nbsp;
 
 ![iz_model](iz_model.png)
 Reference: https://www.izhikevich.org/publications/spikes.htm
 
-### This study was publish at 2018 International Joint Conference on Neural Networks (IJCNN)
+&nbsp;
 
+##### This study was publish at 2018 International Joint Conference on Neural Networks (IJCNN)
+&nbsp;
 Full article:https://ieeexplore.ieee.org/abstract/document/8489438
